@@ -16,6 +16,12 @@ public class GroceryItem {
         this.expiration = extractExpiration(segment);
     }
 
+    public GroceryItem(String name, String price, String type, String expiration) {
+        this.name = name;
+        this.price = price;
+        this.type = type;
+        this.expiration = expiration;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -38,7 +44,7 @@ public class GroceryItem {
     }
 
     public String extractName(String segment){
-        pattern = Pattern.compile("");
+        pattern = Pattern.compile("name:()", Pattern.CASE_INSENSITIVE);
         matcher = pattern.matcher(segment);
         if (matcher.find()){
             return matcher.group(0);
