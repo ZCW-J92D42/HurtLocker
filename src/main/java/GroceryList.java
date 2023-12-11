@@ -28,4 +28,7 @@ public class GroceryList extends ArrayList<ArrayList<GroceryItem>> {
     public void setApples(ArrayList<GroceryItem> apples) {Apples = apples;}
     public int getError() {return Error;}
     public void setError(int error) {this.Error = error;}
+
+
+    //create method for count error
 }
