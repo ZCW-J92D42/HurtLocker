@@ -14,10 +14,9 @@ public class GroceryList extends ArrayList<ArrayList<GroceryItem>> {
         this.Bread = new ArrayList<>();
         this.Cookies = new ArrayList<>();
         this.Apples = new ArrayList<>();
+        this.Error = 0;
     }
-    public int Error(){
-        return 0;
-    }
+
 
     public ArrayList<GroceryItem> getMilk() {return Milk;}
     public void setMilk(ArrayList<GroceryItem> milk) {Milk = milk;}
