@@ -8,10 +8,17 @@ public class JerksonIO {
         return result;
     }
 
+    public static String createFormatString() {
+        return null;
+    }
+
+    public void exportTxt(){
+
+    }
+
     public static void main(String[] args) throws Exception{
         String output = (new JerksonIO()).readRawDataToString();
         System.out.println(output);
-
     }
     //tevin was here.
 }
