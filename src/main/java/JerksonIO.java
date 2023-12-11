@@ -2,6 +2,8 @@ import org.apache.commons.io.IOUtils;
 
 public class JerksonIO {
 
+
+
     public String readRawDataToString() throws Exception{
         ClassLoader classLoader = getClass().getClassLoader();
         String result = IOUtils.toString(classLoader.getResourceAsStream("RawData.txt"));
