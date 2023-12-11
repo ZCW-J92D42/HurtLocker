@@ -4,26 +4,26 @@ import org.junit.Test;
 import java.util.ArrayList;
 
 public class JerksonIOTest {
-    GroceryList groceryList = new GroceryList();
-    ArrayList<GroceryItem> milk = new ArrayList<>();
-    ArrayList<GroceryItem> apples = new ArrayList<>();
-    ArrayList<GroceryItem> bread = new ArrayList<>();
-    ArrayList<GroceryItem> cookies = new ArrayList<>();
-    milk.add(new GroceryItem("MILK", "3.23", "food", "1/25/2018"));
-    apples.add(new GroceryItem("apples", "0.25", "food", "2/27/2020"));
-    apples.add(new GroceryItem("ApPlEs", "0.23", "food", "2/27/2020"));
-    apples.add(new GroceryItem("Apples", "0.23", "food", "2/27/2020"));
-    bread.add(new GroceryItem("Bread", "1.23", "food", "3/19/2021"));
-    cookies.add(new GroceryItem("Cookies", "2.25", "food", "4/15/2022"));
-    groceryList.add(milk);
-    groceryList.add(bread);
-    groceryList.add(apples);
-    groceryList.add(cookies);
-    groceryList.setErrors(2);
-    JerksonIO jio = new JerksonIO(groceryList);
 
     @Test
     public void createFormatStringTest(){
+        GroceryList groceryList = new GroceryList();
+        ArrayList<GroceryItem> milk = new ArrayList<>();
+        ArrayList<GroceryItem> apples = new ArrayList<>();
+        ArrayList<GroceryItem> bread = new ArrayList<>();
+        ArrayList<GroceryItem> cookies = new ArrayList<>();
+        milk.add(new GroceryItem("MILK", "3.23", "food", "1/25/2018"));
+        apples.add(new GroceryItem("apples", "0.25", "food", "2/27/2020"));
+        apples.add(new GroceryItem("ApPlEs", "0.23", "food", "2/27/2020"));
+        apples.add(new GroceryItem("Apples", "0.23", "food", "2/27/2020"));
+        bread.add(new GroceryItem("Bread", "1.23", "food", "3/19/2021"));
+        cookies.add(new GroceryItem("Cookies", "2.25", "food", "4/15/2022"));
+        groceryList.add(milk);
+        groceryList.add(bread);
+        groceryList.add(apples);
+        groceryList.add(cookies);
+        groceryList.setErrors(2);
+
         String actual = JerksonIO.createFormatString();
         String expected = "name:    Milk \t\t seen: 1 time\n" +
                             "============= \t \t =============\n" +
