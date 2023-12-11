@@ -1,7 +1,6 @@
 import org.apache.commons.io.IOUtils;
-import java.io.IOException;
 
-public class Main {
+public class JerksonIO {
 
     public String readRawDataToString() throws Exception{
         ClassLoader classLoader = getClass().getClassLoader();
@@ -10,7 +9,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception{
-        String output = (new Main()).readRawDataToString();
+        String output = (new JerksonIO()).readRawDataToString();
         System.out.println(output);
 
     }
