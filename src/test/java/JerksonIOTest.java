@@ -22,7 +22,7 @@ public class JerksonIOTest {
         groceryList.add(bread);
         groceryList.add(apples);
         groceryList.add(cookies);
-        groceryList.setErrors(2);
+        groceryList.setError(2);
 
         String actual = JerksonIO.createFormatString();
         String expected = "name:    Milk \t\t seen: 1 time\n" +

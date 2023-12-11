@@ -30,4 +30,3 @@ public class GroceryList extends ArrayList<ArrayList<GroceryItem>> {
     public int getError() {return Error;}
     public void setError(int error) {this.Error = error;}
 }
-
