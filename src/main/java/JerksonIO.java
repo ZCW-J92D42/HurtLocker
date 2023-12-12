@@ -1,7 +1,8 @@
 import org.apache.commons.io.IOUtils;
-import java.io.IOException;
 
-public class Main {
+public class JerksonIO {
+
+
 
     public String readRawDataToString() throws Exception{
         ClassLoader classLoader = getClass().getClassLoader();
@@ -9,9 +10,17 @@ public class Main {
         return result;
     }
 
-    public static void main(String[] args) throws Exception{
-        String output = (new Main()).readRawDataToString();
-        System.out.println(output);
+    public static String createFormatString() {
+        return null;
+    }
+
+    public void exportTxt(){
 
     }
+
+    public static void main(String[] args) throws Exception{
+        String output = (new JerksonIO()).readRawDataToString();
+        System.out.println(output);
+    }
+    //tevin was here.
 }
